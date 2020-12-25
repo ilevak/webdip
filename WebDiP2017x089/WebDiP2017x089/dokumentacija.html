@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+    <html>
+        <head>
+            <title>Autoškola</title>
+            <meta charset="UTF-8">
+            <meta name="autor" content="Iva Levak">
+            <meta name="naslov" content="Početna stranica">
+            <meta name="opis" content="Stranica izradena za kolegij Web dizajn i programiranje">
+            <meta name="datum promjene" content="--">
+            <link href='css/ilevak.css' rel='stylesheet' type="text/css">
+            <link href='css/ilevak_prilagodbe.css' rel='stylesheet' type="text/css">
+            <script type="text/javascript" src="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10/datatables.min.js"></script>  
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+       
+        <body id="pocetak-stranice">
+            <nav class="navigacija" id="navigacijaId">
+
+                <div class="headerNavigacije">
+                    <a href="index.php"></a>
+                    <a class="logo" href="index.php#pocetak-stranice">
+                        <image class="slika1" src="multimedija/ikonaLogo.png"> 
+                        <span class="logoTekst"> DIK</span>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <button class="gumbNavigacije sakrijGumbNavigacije">
+                        <span class="crtica"></span>
+                        <span class="crtica"></span>
+                        <span class="crtica"></span>
+                    </button>
+                    <div class="navigacijaSklanjanje dropdown-content">
+                         <ul class="navigacijaUl">
+                            <li> <a href="index.php#pocetak-stranice">Početna stranica</a></li>
+                            <li> <a href="index.php#o-nama">O NAMA</a></li>
+                            <li> <a href="index.php#kontakt">KONTAKT</a></li>
+                            <li> <a href="index.php#usluge">USLUGE</a>
+                                <ul>
+                                    <li> <a href="index.php#cijenik">CIJENIK</a></li>
+                                    <li><a href="index.php#popisInstruktora">INSTRUKTORI</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="#">Upisi</a>
+                                <ul>
+                                    <?php if(isset($_SESSION['prijava']) && $_SESSION["prijava"]==3){?> 
+                                    <li><a href="tablica.php#korisnik">Podaci</a></li>
+                                    <?php } ?> 
+                                    <li><a href="odabirGrupe.php">Odabir grupe</a></li>
+                                    <?php if(isset($_SESSION['prijava'])&& $_SESSION["prijava"]>1){?> 
+                                    
+                                    <li><a href="prihvacanjeZahtjeva.php">Zahtjevi za upis</a></li>
+                                    <li><a href="moderatorVrsteOglasa.php">Kreiranje vrsta oglasa</a></li>
+                                    <li><a href="moderatorPrihvacanjeOglasa.php">Prihvacanje oglasa</a></li>
+                                     <?php } ?>
+                                    <?php if(isset($_SESSION['prijava'])){?> 
+                                    <li><a href="vrsteOglasa.php">Vrsta oglasa</a></li>
+                                    <?php } ?>
+                                </ul>
+                            </li>
+                            <li><a href="dokumentacija.html">Dokumentacija</a>
+                                <ul>
+                                    <li><a href="dokumentacija.html">O projektu</a></li>
+                                    <li><a href="o_autoru.html">O autoru</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="prijavaRegistracija.php?mod=registracija">Registracija</a></li>
+                            <?php if(!isset($_SESSION['prijava'])){ ?>
+                            <li> <a href="prijavaRegistracija.php?mod=prijava">Prijava</a></li>
+                            <?php }
+                            if(isset($_SESSION['prijava'])){ ?>
+                            <li><a href="odjava.php">Odjava</a></li>
+                            <?php }?> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header>
+                <div class="pozadinskaSlika tekstCentar ">
+                    <div class="preklapanje">
+                        <div class="divovi">
+                            <div class="red">
+                                <div class="pozadinskitekst">
+                                    <h1>
+                                        Dokumentacija
+                                    </h1>
+                                    <a class="gumbUsluge"href="#usluge">Saznaj više</a>
+                                    <div id="google_translate_element"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slika velika i tekst kratki.. -->
+            </header>
+            
+            <section id="o-nama"  class="sekcijaNeparna tekstCentar" >
+              
+                <div class="divovi">
+                    
+                    <div class="naslov1">
+                        <h2>
+                            Opis projektnog zadatka
+                        </h2>
+                        <p>  
+                           Sustav služi za
+upravljanje rasporednom predavanja i ispita autoškole te rezervaciju istih.
+                        </p>
+                    </div>
+                    <div class="red">
+                        
+                        <div>
+                            <div class="red">
+                                <h4>Korisnici</h4>
+                                <p>
+                                    Postoje 4 vrste korisnika;neregitsrtirani i registrirani korisnik, moderator i administrator.
+                                    Administrator ima najviše ovlasti i on može pristupiti svim podacima u bazi te također može izmijeniti bilo 
+                                    koji podatak u bazi. Moderator ima manje ovlasti od administratora i on određuje vrste oglasa za pozicije 
+                                    za koje ga je podredio administrator te je zadužen za svoju grupu(termine) i po tome određuje termine te prihavaca
+                                    zahtjeve za upisom u termin. Registrirani korisnik moze sve i ko neregistrirani no jos ima ovlasti kreirati oglase tako sto 
+                                    šalje zahtjev za kreiranjem novog oglasa, a kasnije ga moderator prihvača. Može blokirati oglase i vidjeti statistiku vezanu
+                                    za klikove na nj. pglasima. Vidi također popis svojih zahtjeva u obliku galerije slika i može ih uređivati ako još nisu odobreni. 
+                                    Neregistrirani korisnik vidi grupe, ocjene moderatora i termine grupa te može ukoliko želi upisati se u grupu te pri tome dobiva 
+                                    jednokratnu lozinku za ocjenjivanje moderatora. Može prevoditi stranicu putem Google translate API, te može klikati na oglas(pri 
+                                    ćemu se broj klikova na oglas povećava. Kako se ide po važnosti uloge tako svaka uloga nasljeđuje funkcionalnosti druge,
+                                    odnosno administrator može sve što može moderator, i neregistrirani i registrirani korisnik.
+                                </p>
+                                <h4></h4>
+                                <p>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DIvovi sa tekstom, naslov, slika -->
+            </section>
+            <section id="o-nama"  class="sekcijaNeparna tekstCentar" >
+              
+                <div class="divovi">
+                    
+                    <div class="naslov1">
+                        <h2>
+                            Opis projektnog rješenja
+                        </h2>
+                        <p>  
+                           Sustav služi za
+upravljanje rasporednom predavanja i ispita autoškole te rezervaciju istih.
+                        </p>
+                    </div>
+                    <div class="red">
+                       
+                        <div>
+                            <div class="red">
+                                <h4>Korisnici</h4>
+                                <p>
+                                    Rješenje ne zadvoljava sve uvijete projektnog zadatka.Početna stranica je implementirana kao one-page koja 
+                                    bi sadržavala sve bitne podatke o autoškoli, od okvirnog popisa instuktora do kategorija vozačkih dozvola za koej mogu polagati
+                                    te se također nalazi i sekcija konakti. Odlaskom na prijavu otvara se skripta za prijavu koja provjerava postoji li
+                                    korisnik unutar sustava kao registrirani. Ako ne, korisnik može pritiskom na gumb na stranici ili u izborniku otići na registraciju.
+                                    Na registraciji se provodi validacija unosa. Nakon uspješne registracije, šalje mu se email sa aktivacijskim linkom računa.
+                                    Nakon što aktivira svoj račun može se prijaviti u sustav. Administrator može jedino vršiti  promjen tipa korisnika pa je zato kao 
+                                    početni tip korisnika odabran registrirani...
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DIvovi sa tekstom, naslov, slika -->
+            </section>
+            
+            <section id="o-nama"  class="sekcijaNeparna tekstCentar" >
+              
+                <div class="divovi">
+                    
+                    <div class="naslov1">
+                        <h2>
+                           Popis skripti:
+                        </h2>
+                    </div>
+                    <div class="red">
+                        
+                        <div>
+                            <div class="red">
+                                <h4>_</h4>
+                                <h4>baza.class.php</h4>
+                                <p>Spajanje na bazu i izvrsavanje upita
+                                </p>
+                                <h4>cookieUvjetiKoristenja.php</h4>
+                                <p>Stvaranje kolacica prihvacanja uvjeta koristenja
+                                </p>
+                                <h4>index.php</h4>
+                                <p>Početna stranica</p>
+                                <h4>odabirGrupe.php</h4>
+                                <p>Prijava neregistriranog korisnika u grupu(pregled mentora za odredenu grupu</p>
+                                <h4>odjava.php</h4>
+                                <p>Odjava iz sustava</p>
+                                <h4>prijavaRegistracija.php</h4>
+                                <p>Prijaba i registracija, vode na uspjesnaRegistracija.php(potvrdivanje racuna), i na slanjeLozinke.php(šalje se nova lozinka)</p>
+                                <h4>Punjenje tablica:</h4>
+                                <p>Sljedeće skripte su implemenirane radi punjenja tablica:popisGrupa.php punejnjeOglasiSlika.php, punjenjeTablicaBrisanje.php,
+                                    punjenjeTablicaOdabirGrupe.php, punjenjeTablicaPrikazModeratora.php, punjenjeTablicaSort.php, punjenjeTablicaUredivanje.php, tablicaPunenje.php, validation.php
+                                </p>
+                                <h4>recaptchalib.php</h4>
+                                <p>Služi za reCaptcha element</p>
+                                <h4>tablica.php</h4>
+                                <p>Od nje se može pristupati svim bitnim tablicama, može se uređivati dodavati i brisati te straničiti i sortirati</p>
+                                <h4>Mapa privatno</h4>
+                                <p>Sadržava .htaccess .htpasswd i korisnici.php.Korisnici.php sadrži popis svih korisnika, nj. ime, prezime, lozinku i tip. Pristup toj skripti se regulira uz .htaccess</p>
+                                <h4>Mapa Multimedija</h4>
+                                <p>Sadržava sve slike koje su upotrebljene na skriptama, najčešće u obliku ikona.</p>
+                                <h4>Mapa js</h4>
+                                <p>Sadržava sve javascript datoteke koje su pozivane u skriptama. Prilagodbe.js je korišteno u svakoj skripti a odnosi se na uređivanje izbornika kad se dogodi scroll.
+                                cookieUvjetiKoristenja.js "sadrzi" popup prozor za prihvacanje uvjeta koristenja i kreiranje cookie-a. GoogleTranslateAPI.js je javascript datoteka koristena za prevodenje stranice.OdabirGrupe. js
+                                se koristi kod odabira stranice i omogucava prikaz elemenata. TablicaSort.js je najduza i najbitnija jer sadrzi niz funkcija za uredivanje tablice i elemenata oko nj. te dodjeljivanje tih funkcija elementima.
+                                PrijavaRegistracija.js sluzi za validaciju podataka iz prijave i registracije.
+                                </p>
+                                <h4>Mapa css</h4>
+                                <p>Unutar mape css se nalaze ilevak.css ilevakGoogleTranslate.css i ilevak_prilagodbe.css. ilevak.css suzi za dizajn strancie, ilevak_prilagodbe.css za responzivni dizajn a ilevakGoogleTranslate.js za uredenje gumba Google Translate-a</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="o-nama"  class="sekcijaNeparna tekstCentar" >
+              
+                <div class="divovi">
+                    
+                    <div class="naslov1">
+                        <h2>
+                           Popis tehnologija i biblioteka:
+                        </h2>
+                    </div>
+                    <div class="red">
+                        
+                        <div>
+                            <div class="red">
+                                <h4>Tehnologije: NetBeans IDE 8.2</h4>
+                                <p>Sve je rađeno unutar NetBeans IDE-a uz pomoc online W3Schools alata. NetBeans je program koji smo koristili na nastavi i zbog toga mi je bilo lakše korstiti se s njime </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="red">
+                                <h4>Biblioteke</h4>
+                                <p>Od posebnih biblioteka su samo one za jquery i one za GoogleTranslateAPI i reCaptcha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="o-nama"  class="sekcijaNeparna tekstCentar" >
+              
+                <div class="divovi">
+                    
+                    <div class="naslov1">
+                        <h2>
+                            Opis projektnog zadatka
+                        </h2>
+                        <p>  
+                           Sustav služi za
+upravljanje rasporednom predavanja i ispita autoškole te rezervaciju istih.
+                        </p>
+                    </div>
+                    <div class="red">
+                        
+                        <div>
+                            <div class="red">
+                                <h4>ERA</h4>
+                                <img src="multimedija/ERA.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DIvovi sa tekstom, naslov, slika -->
+            </section>
+            <footer>
+                <p class="tekstCentar"> Copyright &copy; 2017 Iva Levak. </p>
+            </footer>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+            <script type="text/javascript" src="js/prilagodbe.js"></script> 
+            <script type="text/javascript" src="js/googleTranslateAPI.js"></script> 
+            <script type="text/javascript" src="js/cookieUvjetiKoristenja.js"></script> 
+            <link href='css/ilevakGoogleTranslate.css' rel='stylesheet' type="text/css">
+            <script type="text/javascript" src="js/oglasi.js">funkcijaOglasi()</script>
+        </body>
+    </html>

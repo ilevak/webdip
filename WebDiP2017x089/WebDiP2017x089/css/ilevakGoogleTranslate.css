@@ -1,0 +1,15 @@
+div#google_translate_element div.goog-te-gadget-simple{
+    background-color:transparent; border-color:transparent;
+}
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{
+    color:#FF652F;
+}
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{
+    color:#FFE400;
+}
+div#google_translate_element div.goog-te-gadget-simple img.goog-te-gadget-icon{
+    display: none;
+}
+.goog-te-banner-frame{
+    display: none;
+}

@@ -1,0 +1,219 @@
+@media (max-width:1800px) and (min-width: 1200px) {
+    .divovi {
+        width: 900px;
+    }
+    .headerNavigacije{
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: -15px;
+    }
+    .navigacijaSklanjanje{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+        border-top: 0;
+        display: block;
+
+    }
+    .sakrijGumbNavigacije{
+        display:none;
+    }
+    .navigacijaUl{
+        float: right;
+        margin: 0;
+        margin-right: -15px;
+
+    }
+    li{
+        float: left;
+    }
+    .navigacijaUl>li>a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .formaDio{
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    
+
+}
+@media(max-width: 1200px) and (min-width: 992px){
+    .divovi{
+        width: 900px;
+    }
+    .headerNavigacije{
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: -15px;
+    }
+    .navigacijaSklanjanje{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+        border-top: 0;
+        display: block;
+
+    }
+    .sakrijGumbNavigacije{
+        display:none;
+    }
+    .navigacijaUl{
+        float: right;
+        margin: 0;
+        margin-right: -15px;
+
+    }
+    li{
+        float: left;
+    }
+    .navigacijaUl>li>a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .formaDio{
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    
+}
+@media(max-width:992px) and (min-width: 832px) {
+    .divovi {
+        width: 750px;
+    }
+    .headerNavigacije{
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: -15px;
+    }
+    .navigacijaSklanjanje{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+        border-top: 0;
+        display: block;
+
+    }
+    .sakrijGumbNavigacije{
+        display:none;
+    }
+    .navigacijaUl{
+        float: right;
+        margin: 0;
+        margin-right: -15px;
+
+    }
+    li{
+        float: left;
+    }
+    .navigacijaUl>li>a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .formaDio{
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .oNamaDiv{
+        width: 67.7777%;
+    }
+    .naslov1{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media(max-width:832px){
+    .naslov1{
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    html{
+        font-size: 18px;
+    }
+    .headerNavigacije{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .gumbNavigacije{
+        float: right;
+        padding-right:0px;
+    }
+    .logoTekst{
+        font-size:18px;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    .slika1{
+        height: 70%;
+        width: auto;
+
+
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #272727;
+        min-width: 160px;
+        z-index: 1;
+        right:10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .navigacijaUl li:hover ul{
+        right: 150px;
+        top:0px;
+    }
+    .oNamaDiv{
+        width: 100%;
+    }
+    .sadrzajPrijavaRegistracija p{
+        font-size: 14px;
+    }
+    .sadrzajPrijavaRegistracija .tekst-krivo{
+        font-size: 12px;
+    }
+    .sadrzajPrijavaRegistracija .formaDio{
+        padding: 3px 6px;
+        margin: 8px 0;
+        height: 30px;
+    }
+    .sakrijGumbTekstTablica{
+        display:none;
+    }
+}

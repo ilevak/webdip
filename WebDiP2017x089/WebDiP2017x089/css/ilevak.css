@@ -1,0 +1,1064 @@
+/*opcenite postavke*/
+
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+div
+a,
+section
+{
+    display: block;
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+.tekstCentar{
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+.red {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+h1 {
+    font-weight: 400;
+}
+h2 {
+    margin: 0;
+    color: #FFE400;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+p {
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    line-height: 1.42;
+    font-size: 14px;
+    margin: 0;
+}
+
+.navigacija{
+    padding:20px;
+    transition: all 0.8s;
+    background-color: transparent;
+    border-color: transparent;
+    top: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.on {
+    background-color: #272727;
+    padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+}
+
+.divovi{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.headerNavigacije{
+    margin-right: 0px;
+    margin-left: 0px;
+    float: left
+
+
+}
+a{
+    background-color: transparent;
+}
+.logo{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: left;
+    height: 50px;
+
+    line-height: 20px;
+    padding: 15px;
+    padding-bottom: 0px;
+
+}
+
+.logoTekst{
+    line-height: 20px;
+    font-size:20px;
+    padding-bottom: 15px;
+}
+
+
+.slika1{
+    display: inline-block;
+}
+
+.navigacijaSklanjanje{
+    border-color: #e7e7e7;
+    max-height: 340px;
+    border-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover, a:focus {
+
+    text-decoration: none;
+    color: #FF652F;
+
+}
+a:active, a:hover {
+
+    outline: 0;
+
+}
+
+.gumbNavigacije{
+    position: relative;
+    float: right;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+.crtica{
+    background-color:#FF652F;
+
+}
+
+.gumbNavigacije:hover, .gumbNavigacije:focus
+{
+    background-color: #FF652F;
+    border-color: transparent;
+}
+
+
+.gumbNavigacije .crtica{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+
+}
+
+.gumbNavigacije .crtica + .crtica {
+    margin-top: 4px;
+}
+
+.navigacijaSklanjanje{
+    display:block;
+    height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+}
+.navigacijaUl{
+    margin:7.5 px -15px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+ul{
+    padding:7.5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.navigacijaUl li{
+    position: relative;
+    display:block;
+}
+
+.navigacijaUl li a{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    position: relative;
+    diplay: block;
+    padding: 10px 15px;
+    font-family: sans-serif;
+
+
+}
+
+.navigacijaUl>li>.active>a{
+    color:#FF652F;
+    background-color: transparent;
+}
+.navigacijaUl li a:hover, a:focus {
+    color: #FF652F;
+}
+.navigacijaUl ul{
+    position: absolute;
+    list-style: none;
+    display:none;
+}
+.navigacijaUl li:hover ul{
+    display:block;
+    background-color: #272727;
+    position: absolute;
+}
+
+.navigacijaUl li:hover a{
+    color: #FF652F;
+}
+
+.navigacijaUl li:hover ul a{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #e7e7e7; 
+    line-height: 20px;
+    margin: 0;
+    position: relative;
+    float:left;
+    display: block;
+    padding: 2px 20px;
+    font-family: sans-serif;
+    background-color: transparent;
+    white-space: nowrap;
+}
+.navigacijaUl li:hover ul li a:hover{
+    color: #FF652F;
+}
+
+
+
+/* Header */
+
+.pozadinskaSlika{
+    display:table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color:#fff;
+    background: url(../multimedija/auto.jpg)no-repeat center center;
+    background-size: cover;
+}
+
+.pozadinskaSlika .preklapanje {
+    padding:100px;
+    background: linear-gradient(to bottom, rgba(39,39,39,1) 0%, rgba(39,39,39,0.6) 100%);
+}
+
+.logoTekst{
+    padding-bottom: 1px;
+    font-family: sans-serif;
+}
+
+.gumbUsluge{
+    color: #FF652F;
+    background-color: transparent;
+    border: 2px solid #FF652F;
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: normal;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+.gumbUsluge:hover, .gumbUsluge:focus{
+    color: #272727;
+    background-color: #FF652F;
+    border-color: #FF652F;
+    text-decoration: none;
+
+}
+
+.dropdownRazlog{
+
+    background-color: #3d3d3d;
+   border: none;
+   font-size: 14px;
+   padding: 5px; 
+   width: 268px;
+    border-radius: 5px;
+    color: white;
+ margin-right: 30px;
+}
+
+
+
+
+/*DIzajn sekcija*/
+
+.sekcijaParna{
+    padding: 50px 0;
+    background-color: #FF652F;
+
+}
+.sekcijaParna h2{
+    color: #272727;
+}
+.sekcijaNeparna{
+    padding: 50px 0;
+    background-color: #272727;
+}
+.sekcijaKontakt{
+    background-color: #FF652F;
+}
+.naslov1{
+    padding: 25px 0 60px 0;
+    position: relative;
+    min-height: 1px;
+    margin-left: 200px;
+    margin-right:200px;
+
+}
+
+/*Dizajn kontakt*/
+.pozadinskaSlikaKontakt{
+    background: url(../multimedija/contactusbg.jpg) no-repeat center top;
+    display:table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color:#fff;
+    background-size: cover;
+}
+.pozadinskaSlikaKontakt .preklapanje{
+    padding: 100px 0 40px 0;
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 1) 0%, rgba(255, 101, 47,0.2) 100%);
+
+}
+
+.sadrzajKontakt .divovi{
+    width: 750px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.sadrzajKontakt{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.sadrzajKontakt form{
+    padding: 20px 0;
+}
+.grupaForme{
+    margin-bottom: 15px;
+}
+
+.sadrzajKontakt .formaDio{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    background-image: none;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    transition:none;
+    height: 34px;
+}
+
+input{
+    font-family: inherit;
+}
+
+.sadrzajKontakt textarea.formaDio{
+    height:auto;
+}
+
+.sadrzajKontakt .pomoc{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #e7e7e7;
+}
+
+.sadrzajKontakt .tekst-krivo{
+    color: #ff6600;
+    text-align: left;
+}
+
+.gumbForme{
+    color: #FF652F;
+    background-color: transparent;
+    border: 2px solid #FF652F;
+    padding: 12px 20px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    overflow: visible;
+}
+.gumbForme:hover, .gumbForme:focus{
+    color: #272727;
+    background-color: #FF652F;
+    border-color: #FF652F;
+    text-decoration: none;
+} 
+.ikoneDrustvenihMreza{
+    margin-top: 80px;
+}
+.ikoneDrustvenihMreza ul{
+    list-style: none;
+}
+.ikoneDrustvenihMreza ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.ikoneDrustvenihMreza ul li a img{
+    width:30px;
+    height: auto;
+    padding: 4px 5px;
+    transition: all 0.5s;
+}
+.ikoneDrustvenihMreza ul li a:hover img{
+    width:40px;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px #FF652F);
+}
+
+/* Dizajn O nama*/
+#o-nama p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #e7e7e7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.oNamaDiv{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%;
+    float: left;
+}
+.oNamaDiv img{
+    max-width: 100%;
+    display: block;
+    height:auto;
+    padding-bottom: 20px;
+}
+.oNamaTekst{
+    margin-left: 10px;
+    text-align: left;
+    margin-right:10px;
+}
+
+/*DIzajn prijava registracija*/
+
+.pozadinskaSlikaPrijavaRegistracija{
+    background: url(../multimedija/prijavaRegistracijaPozadina.jpg) no-repeat center top;
+    display:table;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    background-size: cover;
+    height:1200px;
+}
+.pozadinskaSlikaPrijavaRegistracija .preklapanje{
+    padding: 100px 0 40px 0;
+    background: linear-gradient(to bottom, rgba(39, 39, 39, 1) 0%, rgba(39, 39, 39,0.8) 100%);
+    height:1200px;
+}
+
+
+.sadrzajTablica .divovi{
+    width: 750px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.sadrzajPrijavaRegistracija{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.sadrzajPrijavaRegistracija form{
+    padding: 20px 0;
+}
+
+
+.sadrzajPrijavaRegistracija .formaDio{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    background-image: none;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    transition:none;
+    height: 34px;
+}
+.gumbRegistracije{
+    font-size: 16px;
+    color: #FFE400;
+    font-weight: bold;
+    display:inline-block;
+
+}
+.sadrzajPrijavaRegistracija .tekst-krivo{
+    color: #FF652F;
+    text-align: left;
+}
+.sadrzajPrijavaRegistracija .pomoc{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #FF652F;
+}
+
+.g-recaptcha{
+    display:inline-block;
+}
+.labelaCheckBox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.divCheckBox {
+    width: 150px;
+    position: relative;
+    margin: auto;
+}
+.divCheckBox label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+}
+.divCheckBox  label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #ff6600;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.divCheckBox  label:hover::after {
+    opacity: 0.3;
+}
+
+.divCheckBox input[type=checkbox] {
+    visibility: hidden;   
+}
+
+.divCheckBox input[type=checkbox]:checked + label:after {
+    opacity: 1;
+} 
+.pCheckBox{
+    display: inline-block;
+}
+
+input[type=number] { 
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+}
+
+.tocno{
+    background-color:rgba(20, 167, 108,0.5);
+}
+.netocno{
+    background-color:rgba(114, 13, 13, 0.5);
+}
+
+
+/*dizajn Tablice*/
+.div2Tablica {
+    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tablica {
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none; 
+    overflow: hidden;
+}
+
+.prikaziTablica {
+    display: block;
+}
+
+.gumbTablica {
+    background-color: transparent;
+    color:#FF652F;
+    border: 2px solid #FF652F;
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.gumbTablica:hover {
+    background-color: rgba(255, 98, 41, 0.8);
+    color:black;
+    border: #FF652F;
+}
+
+.gumbTablica.aktivno {
+    background-color: #FF652F;
+    color: black;
+}
+
+
+thead tr{
+    font-size: 12px;
+    line-height: 1.4;
+    color: white;
+}
+tr th{
+    padding:3px;
+    vertical-align: bottom;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+tbody tr{
+    font-size: 12px;
+    line-height: 1.4;
+    color: white;  
+    background-color: transparent;
+    border:none;
+
+}
+
+tbody  tr:nth-of-type(2n+1) {
+    background-color: #3d3d3d;
+}
+
+
+.naslovTablice{
+    padding-top: 50px;
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 4.5px;
+    width: 100%;
+    text-align: left;
+}
+
+.redTablica{
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+
+.blockGumbiLijevo{
+    float: left !important;
+    margin-left: -5px;
+    margin-bottom: 1em;
+}
+.gumbTablicaBlok{
+    margin-left: 5px;
+    float: left;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.gumb{
+    border-width: 2px;
+    color: white;
+    background-color: #464545;
+    border-color: #464545;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1.42;
+    border-radius: 4px;
+}
+.gumb img{
+    padding-top: 3px;
+    width: 9px;
+}
+.gumb:hover{
+    background-color: #FF652F;
+    color: #fff;
+}
+
+.sadrzajTablica{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.sadrzajTablica form{
+    padding: 20px 0;
+}
+
+
+.sadrzajTablica .formaDio{
+    display: block;
+    padding: 6px 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    background-image: none;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    transition:none;
+    height: 28px;
+    width: 100%;
+}
+
+.sadrzajTablica .tekst-krivo{
+    color: #FF652F;
+    text-align: left;
+}
+.sadrzajTablica .pomoc{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #FF652F;
+}
+.gumbTablicaForma{
+    font-size: 15px;
+    border-style: none;
+    height: 25px;
+    color: #fff;
+    background-color: #3d3d3d;
+    display:inline-block;
+    border-color: #transparent;
+    border-radius: 4px;
+}
+.gubTablicaForma:hover{
+    background-color: #FF652F;
+}
+.sakrij{
+    display:none;
+}
+tbody tr:hover{
+    background-color: #FF652F;
+}
+.prikazi{
+    display:block;
+}
+tbody tr:visited{
+    background-color: #FF652F;
+}
+
+.dropdownGrupe select{
+    background-color: #3d3d3d;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; 
+   width: 268px;
+    border-radius: 5px;
+    color: white;
+  
+}
+.dropdownGrupeZ select{
+    background-color: #3d3d3d;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; 
+   width: 200px;
+    border-radius: 5px;
+    color: white;
+}
+.dropdownGrupeZ{
+    display:inline-block;
+    width:200px;
+}
+.gumbTablicaBlokL{
+    margin-left: 5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 7px;
+}
+
+.operacijskiGumbi .link-ikona img{
+    padding-top: 3px;
+    width: 9px;
+    display:inline-block;
+}
+
+.link-ikona{
+    width: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.link-ikona:hover{
+    background-color:#d93d06;
+}
+tr th:hover{
+    background-color: #232323;
+}
+tr th a{
+    color:white;
+}
+.stranicenje{
+    float:right;
+    margin-left: -5px;
+    margin-bottom: 1em;
+    line-height: 0px;
+}
+.formaVrijeme{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    background-image: none;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    transition:none;
+    height: 34px;
+}
+
+
+/* cooki uvijeti koristenja*/
+
+
+.iskocniProzor{
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    font-size:20px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}.sadrzajIskocniProzor{
+    font-size:20px;
+    position:relative;
+    background-color: #272727;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #272727;
+    width: 60%; 
+/*   height: 60%;*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 5px;
+}
+
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* Odabir grupa*/
+.formaModerator{
+    display: block;
+    width: 300px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    background-image: none;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    transition:none;
+    height: 34px;
+}
+
+/* OGLASI*/
+
+.oglasi{
+    width: 100%;
+    height:100px;
+    background-color: #3d3d3d;
+}
+.blokOglasiGumb{
+    float:left;
+}
+.blokOglasiGumb .gumb{
+    background-color: transparent;
+}
+.blokOglasiGumb .gumb:hoover{
+    background-color: rgba(61,61,61, 0.7);
+}
+
+/*moderator*/
+label{
+    float:left;
+}
+.gumbVirt{
+    border-width: 2px;
+    color: white;
+    background-color: #464545;
+    border-color: #464545;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1.42;
+    border-radius: 4px;
+}
+
+.gumbVirt:hover{
+    background-color: #FF652F;
+    color: #fff;
+}
